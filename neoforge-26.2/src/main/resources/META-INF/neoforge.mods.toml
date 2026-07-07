@@ -1,0 +1,44 @@
+modLoader="javafml"
+loaderVersion="[3,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="earth_online_magic"
+version="0.1.1"
+displayName="Earth Online: Magic"
+description='''
+In-development beta for Minecraft 26.2 + NeoForge 26.2.0.7-beta.
+Earth Online: Magic is an independent fantasy branch for Earth Online-style worlds:
+magic is treated as a learnable natural phenomenon layered on top of Minecraft's item ecology.
+This first build focuses on load safety, starter materials, basic ritual/alchemy blocks,
+vanilla fallback recipes and bilingual guidance.
+'''
+authors="xxsx"
+
+[[dependencies.earth_online_magic]]
+modId="neoforge"
+type="required"
+versionRange="[26.2.0.7-beta,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.earth_online_magic]]
+modId="minecraft"
+type="required"
+versionRange="[26.2]"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.earth_online_magic]]
+modId="earth_on_minecraft"
+type="optional"
+versionRange="[0.1.0,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.earth_online_magic]]
+modId="earth_human"
+type="optional"
+versionRange="[0.1.1,)"
+ordering="AFTER"
+side="BOTH"

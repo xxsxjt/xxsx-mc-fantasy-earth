@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "earth_online_magic:field_arcane_notebook",
+    "earth_online_magic:arcane_dust"
+  ],
+  "result": {
+    "id": "earth_online_magic:arcane_initiation_notes"
+  }
+}

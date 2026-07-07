@@ -1,0 +1,22 @@
+# Gradle / Java
+.gradle/
+build/
+out/
+*.class
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Minecraft runs
+runs/
+run/
+
+# Local generated assets and temporary experiments
+tmp/
+*.bak
+*.zip
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+!**/gradle/wrapper/gradle-wrapper.jar

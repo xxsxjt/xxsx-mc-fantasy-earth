@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " C ",
+    "SAS",
+    "SSS"
+  ],
+  "key": {
+    "C": "earth_online_magic:ritual_chalk",
+    "A": "earth_online_magic:aether_crystal",
+    "S": "minecraft:polished_blackstone"
+  },
+  "result": {
+    "id": "earth_online_magic:ritual_pedestal"
+  }
+}

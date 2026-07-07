@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "#earth_on_minecraft:arcana_geology_catalysts",
+    "minecraft:redstone",
+    "minecraft:glowstone_dust"
+  ],
+  "result": {
+    "id": "earth_online_magic:arcane_dust",
+    "count": 6
+  }
+}
