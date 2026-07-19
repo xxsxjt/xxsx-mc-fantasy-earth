@@ -10,7 +10,7 @@ Initial target:
 - Loader: NeoForge 26.2.0.7-beta
 - Java: 25
 - Current mod id: `earth_online_magic`
-- Current version: `0.7.0-alpha.8`
+- Current version: `0.7.0-alpha.9`
 - Current status: in-development playable beta
 
 `0.4.3` begins the large-mod phase with a configurable arcane-panel key (`M` by default).
@@ -59,6 +59,11 @@ Their `FlyingMoveControl` can now tick safely instead of crashing when a mana wi
 `0.7.0-alpha.8` replaces the mod icon's opaque navy square with real PNG transparency while
 preserving the brass astrolabe, block Earth, violet crystals and attached cyan arcane accents.
 
+`0.7.0-alpha.9` makes settlement resident initialization incremental and player-aware. Each
+anchor persists its spawn progress, only starts within 48 blocks of a player, and the whole
+server permits at most two settlement entities to be added per tick. This prevents several
+academy outposts or witch hamlets loading together from producing a synchronous entity spike.
+
 Design documents:
 
 - [Initial Plan](docs/initial-plan.md)
@@ -99,7 +104,7 @@ Texture note: facilities use per-face exterior textures, distinct active states 
 
 Mana note: this mod shares the versioned `earth_online_arcana.*` player-data contract with `earth_online_xuanhuan`. Magic-route and qi-route bonuses add together when both mods are present, but each mod writes only its own contribution and remains fully playable alone. Aether-field recovery is intentionally separate from xuanhuan qi: magic reads crystal, ritual, rune and alchemy structures, while xuanhuan reads veins, springs, spirit soil and arrays.
 
-Build artifact: `fantasy-earth-on-minecraft-neoforge-26.2-0.7.0-alpha.8.jar`.
+Build artifact: `fantasy-earth-on-minecraft-neoforge-26.2-0.7.0-alpha.9.jar`.
 
 Build:
 
