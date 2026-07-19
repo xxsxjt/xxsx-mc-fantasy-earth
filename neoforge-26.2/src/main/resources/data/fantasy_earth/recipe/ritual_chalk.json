@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:bone_meal",
+    "minecraft:calcite",
+    "fantasy_earth:arcane_dust"
+  ],
+  "result": {
+    "id": "fantasy_earth:ritual_chalk",
+    "count": 4
+  }
+}

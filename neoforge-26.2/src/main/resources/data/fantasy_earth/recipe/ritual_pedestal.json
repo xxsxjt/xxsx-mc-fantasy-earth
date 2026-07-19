@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " C ",
+    "SAS",
+    "SSS"
+  ],
+  "key": {
+    "C": "fantasy_earth:ritual_chalk",
+    "A": "minecraft:amethyst_shard",
+    "S": "minecraft:polished_blackstone"
+  },
+  "result": {
+    "id": "fantasy_earth:ritual_pedestal"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:paper",
+    "minecraft:gold_nugget",
+    "minecraft:amethyst_shard",
+    "fantasy_earth:rune_ink"
+  ],
+  "result": { "id": "fantasy_earth:familiar_contract", "count": 1 }
+}

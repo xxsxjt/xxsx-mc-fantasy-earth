@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "fantasy_earth:block/ritual_pedestal_top_active",
+    "down": "minecraft:block/polished_blackstone",
+    "up": "fantasy_earth:block/ritual_pedestal_top_active",
+    "north": "fantasy_earth:block/ritual_pedestal_side",
+    "south": "fantasy_earth:block/ritual_pedestal_side",
+    "west": "fantasy_earth:block/ritual_pedestal_side",
+    "east": "fantasy_earth:block/ritual_pedestal_side"
+  }
+}

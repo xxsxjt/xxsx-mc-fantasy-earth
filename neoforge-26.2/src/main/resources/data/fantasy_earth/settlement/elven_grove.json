@@ -1,0 +1,11 @@
+{
+  "display_name": "settlement.fantasy_earth.elven_grove",
+  "culture": "elven",
+  "generation_status": "catalog_only",
+  "weight": 3,
+  "min_distance_chunks": 48,
+  "biomes": ["#minecraft:is_forest"],
+  "buildings": ["living_arch", "aether_garden", "song_hall", "moon_observatory"],
+  "residents": ["grove_warden", "aether_gardener", "lore_singer", "envoy"],
+  "outputs": ["fantasy_earth:aether_crystal", "fantasy_earth:aether_glass", "fantasy_earth:crystallized_mana_salt"]
+}

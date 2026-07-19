@@ -1,0 +1,8 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": [
+    "fantasy_earth:aether_crystal_cluster"
+  ],
+  "step": "underground_ores"
+}

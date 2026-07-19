@@ -4,9 +4,9 @@
 
 - `earth_on_minecraft`: realistic materials and geology core, reviewed at `0.1.9`.
 - `earth_human`: independent human-status mod, reviewed at `0.1.15`.
-- `earth_online_xuanhuan`: independently playable Xuanhuan Earth on Minecraft; shares the mana pool when installed together.
+- `xuanhuan_earth`: independently playable Xuanhuan Earth; shares the mana pool when installed together.
 
-Every integration remains optional. Fantasy Earth on Minecraft must retain a complete vanilla fallback when every other ecosystem mod is absent.
+Every integration remains optional. Fantasy Earth must retain a complete vanilla fallback when every other ecosystem mod is absent.
 
 ## Earth on Minecraft material surface
 
@@ -21,7 +21,7 @@ When a tag is empty, its enhanced facility recipe is omitted from JEI and vanill
 
 ## Shared Arcana player data
 
-Magic and cultivation communicate through `earth_online_arcana.*` persistent keys for current mana, route bonuses, progression and human adaptation. Each independent mod only adds its own contribution and never resets another mod's data.
+Magic and cultivation communicate through `earth_arcana.*` persistent keys for current mana, route bonuses, progression and human adaptation. Each independent mod only adds its own contribution and never resets another mod's data.
 
 `earth_human` already reads cultivation, magic research, fasting, breathing, endurance and body-tempering keys through `ArcanaHumanBridge`.
 

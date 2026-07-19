@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "earth_online_magic:rune_carving_table",
-    "earth_online_magic:ritual_pedestal",
-    "earth_online_magic:aether_crystal_cluster"
+    "fantasy_earth:rune_carving_table",
+    "fantasy_earth:ritual_pedestal",
+    "fantasy_earth:aether_crystal_cluster"
   ]
 }

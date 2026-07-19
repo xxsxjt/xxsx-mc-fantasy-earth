@@ -1,0 +1,4 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": { "layer0": "fantasy_earth:item/familiar_contract" }
+}

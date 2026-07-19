@@ -3,9 +3,9 @@ plugins {
     id 'net.neoforged.moddev' version '2.0.140'
 }
 
-version = '0.7.0-alpha.9'
-group = 'com.xxsx.earthonlinemagic'
-base.archivesName = 'fantasy-earth-on-minecraft-neoforge-26.2'
+version = '0.7.0-alpha.10'
+group = 'com.xxsx.fantasyearth'
+base.archivesName = 'fantasy-earth-neoforge-26.2'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(25)
 
@@ -25,7 +25,7 @@ neoForge {
     }
 
     mods {
-        earth_online_magic {
+        fantasy_earth {
             sourceSet sourceSets.main
         }
     }
@@ -42,9 +42,12 @@ dependencies {
 }
 
 jar {
+    from('../LICENSE') {
+        into 'META-INF'
+    }
     manifest {
         attributes([
-            'Specification-Title'     : 'earth_online_magic',
+            'Specification-Title'     : 'Fantasy Earth',
             'Specification-Vendor'    : 'xxsx',
             'Specification-Version'   : '1',
             'Implementation-Title'    : project.name,
@@ -62,7 +65,7 @@ tasks.withType(JavaCompile).configureEach {
 tasks.register('verifyArcanaBalance', JavaExec) {
     dependsOn testClasses
     classpath = sourceSets.test.runtimeClasspath
-    mainClass = 'com.xxsx.earthonlinemagic.ArcanaBalanceRegression'
+    mainClass = 'com.xxsx.fantasyearth.ArcanaBalanceRegression'
 }
 
 tasks.named('test', Test) {

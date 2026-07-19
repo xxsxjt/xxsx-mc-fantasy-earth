@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "earth_online_magic:item/arcane_body_ward_notes"
-  }
-}

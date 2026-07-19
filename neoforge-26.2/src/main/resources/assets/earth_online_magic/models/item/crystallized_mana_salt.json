@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "earth_online_magic:item/crystallized_mana_salt"
-  }
-}

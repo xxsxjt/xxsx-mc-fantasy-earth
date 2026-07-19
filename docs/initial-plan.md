@@ -1,8 +1,8 @@
-# Fantasy Earth on Minecraft / 魔幻地球 on Minecraft - Initial Plan
+# Fantasy Earth / 魔幻地球 - Initial Plan
 
 ## 1. Positioning
 
-`魔幻地球 on Minecraft` 是独立仓库、独立可玩 mod，不塞进《我的地球》，也不要求安装它。
+`魔幻地球` 是独立仓库、独立可玩 mod，不塞进《我的地球》，也不要求安装它。
 
 它的定位不是“现实复刻”，而是提供一套完整的魔幻世界层：本模组与原版材料可以独立支撑魔法仪式、炼金、符文、法器、结界和魔法生态；安装《我的地球》后再接入更丰富的现实矿物、金属、盐类、颜料、玻璃和陶瓷路线。
 
@@ -11,7 +11,7 @@
 - 不复刻真实生存难度；`地球人类` 是另一个独立 mod，未来只做联动。
 - 不污染 `地球 Online` 本体；本体继续专注真实世界常见内容。
 - 不要求玩家懂化学或神秘学；复杂信息放进手册和 JEI，玩法入口保持简单。
-- 可独立运行；如果检测到 `earth_online`，就使用更丰富、更真实的材料路线。
+- 可独立运行；如果检测到 `earth_on_minecraft`，就使用更丰富、更真实的材料路线。
 - 魔幻风格可以多样，但第一版统一为“现实材料 + 低魔仪式 + 炼金工艺 + 符文工程”。
 - 与玄幻分支互通：魔力与灵力统一为法力值，两条路线都练时贡献直接相加。
 
@@ -22,7 +22,7 @@
 - 真实地质、材料、工业、能源、电力、基础设施、现代和近现代路线。
 - 提供矿物、粉末、盐、酸碱、金属、玻璃、陶瓷、纸、颜料、电子材料等基础物质。
 
-`魔幻地球 on Minecraft`：
+`魔幻地球`：
 
 - 使用上述物质作为魔法材料基础。
 - 增加魔力、炼金、符文、仪式、法器、结界、魔法植物/矿物、魔法生态。
@@ -60,16 +60,16 @@ MVP 内容：
 - 复杂职业/等级系统。
 - 大规模维度。
 - 过早加入不可控世界污染。
-- 强制依赖 `earth_online`。
+- 强制依赖 `earth_on_minecraft`。
 
 ## 4. Material Routes
 
 Vanilla fallback routes:
 
 - 红石、青金石、石英、紫水晶、荧石、海晶石、末影珍珠、烈焰粉、墨囊、纸、玻璃、铜、金、铁。
-- 这些保证没有 `earth_online` 时也能玩。
+- 这些保证没有 `earth_on_minecraft` 时也能玩。
 
-Earth Online integration routes:
+Earth on Minecraft integration routes:
 
 - 石英粉、长石粉、云母粉、盐粉、硫粉、汞滴、金粉、铜线、玻璃配合料、陶瓷绝缘件、颜料、酸碱、稀土、钕铁硼磁材。
 - 更真实的材料路线提供更高产率、更稳定配方或高级变体。
@@ -153,22 +153,22 @@ Earth Online integration routes:
 初始实现目标：
 
 - MC 26.2 / NeoForge 26.2.x / Java 25。
-- 单模块独立仓库，不直接嵌进 `earth_online`。
-- 可选依赖 `earth_online`：检测存在则启用联动配方和材料标签。
+- 单模块独立仓库，不直接嵌进 `earth_on_minecraft`。
+- 可选依赖 `earth_on_minecraft`：检测存在则启用联动配方和材料标签。
 - JEI 可选集成：不作为硬依赖。
 - 语言：`zh_cn` 和 `en_us` 从第一版开始同步。
 
 建议目录：
 
 ```text
-earth_online_magic/
+fantasy_earth/
 ├── docs/
 ├── neoforge-26.2/
 ├── README.md
 └── .gitignore
 ```
 
-后续真正建 mod 骨架时，优先参考当前 `earth_online/neoforge-26.2` 已验证的 ModDevGradle 结构，但不要复制业务代码。
+后续真正建 mod 骨架时，优先参考当前 `earth_on_minecraft/neoforge-26.2` 已验证的 ModDevGradle 结构，但不要复制业务代码。
 
 ## 8. First Milestone
 
@@ -180,14 +180,14 @@ earth_online_magic/
 - 炼金台。
 - 8-12 个基础魔法材料。
 - 6-10 条 vanilla fallback 配方。
-- 6-10 条 Earth Online integration 配方。
+- 6-10 条 Earth on Minecraft integration 配方。
 - JEI 分类：炼金 / 符文 / 仪式。
 - 中英语言。
 
 第一阶段验收：
 
-- 无 `earth_online` 时可进游戏。
-- 有 `earth_online` 时联动配方出现。
+- 无 `earth_on_minecraft` 时可进游戏。
+- 有 `earth_on_minecraft` 时联动配方出现。
 - JEI 可查基础路线。
 - 手册能告诉完全不懂技术的玩家第一步做什么。
 - 不引入人物难度、体温、疾病、营养等系统。

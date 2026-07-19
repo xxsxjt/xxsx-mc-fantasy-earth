@@ -1,16 +1,16 @@
-# Fantasy Earth on Minecraft / 魔幻地球 on Minecraft
+# Fantasy Earth / 魔幻地球
 
-`Fantasy Earth on Minecraft` is an independently playable fantasy mod. Its stable technical namespace remains `earth_online_magic` to preserve existing test worlds.
+`Fantasy Earth` is an independently playable fantasy mod. Its public identity, workspace, artifacts and primary namespace are unified as `Fantasy Earth / 魔幻地球` and `fantasy_earth`. Legacy `earth_online_magic` registry ids and `earth_online_arcana.*` player data are retained only as migration inputs.
 
-It has its own starter materials, world generation, progression, creatures, settlements and vanilla fallback routes. Earth on Minecraft, Earth Human and Xuanhuan Earth on Minecraft only add optional material, body-system and shared-mana integrations; none of them is required to play this mod.
+It has its own starter materials, world generation, progression, creatures, settlements and vanilla fallback routes. Earth on Minecraft, Earth Human and Xuanhuan Earth only add optional material, body-system and shared-mana integrations; none of them is required to play this mod.
 
 Initial target:
 
 - Minecraft: 26.2
 - Loader: NeoForge 26.2.0.7-beta
 - Java: 25
-- Current mod id: `earth_online_magic`
-- Current version: `0.7.0-alpha.9`
+- Current mod id: `fantasy_earth`
+- Current version: `0.7.0-alpha.10`
 - Current status: in-development playable beta
 
 `0.4.3` begins the large-mod phase with a configurable arcane-panel key (`M` by default).
@@ -64,11 +64,16 @@ anchor persists its spawn progress, only starts within 48 blocks of a player, an
 server permits at most two settlement entities to be added per tick. This prevents several
 academy outposts or witch hamlets loading together from producing a synchronous entity spike.
 
+`0.7.0-alpha.10` unifies the public brand, workspace, GitHub repository, Java package,
+resource namespace, mod id and jar under `Fantasy Earth / 魔幻地球` and `fantasy_earth`.
+NeoForge registry aliases migrate old content ids, while shared player data moves to
+`earth_arcana.*` on first access.
+
 Design documents:
 
 - [Initial Plan](docs/initial-plan.md)
 - [Shared Mana and Magic](docs/shared-mana-and-magic.md)
-- [Arcana Field and Meditation Plan](../earth_online_xuanhuan/docs/arcana-field-and-meditation-plan.md)
+- [Arcana Field and Meditation Plan](../xuanhuan_earth/docs/arcana-field-and-meditation-plan.md)
 - [Ecosystem Integration Contract](docs/ecosystem-integration-contract.md)
 - [Large-Scale Development Plan](docs/large-scale-development-plan.md)
 
@@ -76,13 +81,13 @@ Design documents:
 
 Implemented in `neoforge-26.2/`:
 
-- Creative tab: `Fantasy Earth on Minecraft` / `魔幻地球 on Minecraft`
+- Creative tab: `Fantasy Earth` / `魔幻地球`
 - Starter handbook: `field_arcane_notebook`, craftable from one dirt, any planks, or stone crafting materials
 - Arcane initiation notes: `arcane_initiation_notes`, crafted from a normal book, arcane dust and amethyst; first use unlocks magic-route contribution without consuming the handbook
 - Basic materials: arcane dust, rune ink, ritual chalk, crystallized mana salt, aether glass, rune copper plate, aether crystal, dormant ritual core
 - Basic blocks: alchemy table, rune carving table, ritual pedestal, aether crystal cluster
 - Bilingual language files: `zh_cn` and `en_us`
-- Vanilla fallback recipes; Earth Online core is optional, not required
+- Vanilla fallback recipes; Earth on Minecraft is optional, not required
 - First image-generated texture pass:
   - 4 block textures at 64x64
   - 9 item icons at 32x32 with transparent backgrounds
@@ -102,9 +107,9 @@ Implemented in `neoforge-26.2/`:
 
 Texture note: facilities use per-face exterior textures, distinct active states and separate visual identities for alchemy, rune carving and rituals. This remains an in-development test build.
 
-Mana note: this mod shares the versioned `earth_online_arcana.*` player-data contract with `earth_online_xuanhuan`. Magic-route and qi-route bonuses add together when both mods are present, but each mod writes only its own contribution and remains fully playable alone. Aether-field recovery is intentionally separate from xuanhuan qi: magic reads crystal, ritual, rune and alchemy structures, while xuanhuan reads veins, springs, spirit soil and arrays.
+Mana note: this mod shares the versioned `earth_arcana.*` player-data contract with `xuanhuan_earth`. Magic-route and qi-route bonuses add together when both mods are present, but each mod writes only its own contribution and remains fully playable alone. Aether-field recovery is intentionally separate from xuanhuan qi: magic reads crystal, ritual, rune and alchemy structures, while xuanhuan reads veins, springs, spirit soil and arrays.
 
-Build artifact: `fantasy-earth-on-minecraft-neoforge-26.2-0.7.0-alpha.9.jar`.
+Build artifact: `fantasy-earth-neoforge-26.2-0.7.0-alpha.10.jar`.
 
 Build:
 
@@ -112,3 +117,7 @@ Build:
 cd neoforge-26.2
 .\gradlew.bat build --no-daemon --offline
 ```
+
+## License
+
+This project is licensed under `AGPL-3.0-only`. See [LICENSE](LICENSE) for the complete terms.

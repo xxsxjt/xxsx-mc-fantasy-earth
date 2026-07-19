@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [{ "type": "minecraft:item", "name": "fantasy_earth:arcane_dust" }],
+      "functions": [{ "function": "minecraft:set_count", "count": { "type": "minecraft:uniform", "min": 1, "max": 2 } }]
+    },
+    {
+      "rolls": 1,
+      "entries": [{ "type": "minecraft:item", "name": "fantasy_earth:crystallized_mana_salt" }],
+      "conditions": [{ "condition": "minecraft:random_chance", "chance": 0.2 }]
+    }
+  ],
+  "random_sequence": "fantasy_earth:entities/mana_wisp"
+}

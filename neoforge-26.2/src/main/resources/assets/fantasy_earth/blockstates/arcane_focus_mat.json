@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "fantasy_earth:block/arcane_focus_mat" },
+    "facing=east": { "model": "fantasy_earth:block/arcane_focus_mat", "y": 90 },
+    "facing=south": { "model": "fantasy_earth:block/arcane_focus_mat", "y": 180 },
+    "facing=west": { "model": "fantasy_earth:block/arcane_focus_mat", "y": 270 }
+  }
+}

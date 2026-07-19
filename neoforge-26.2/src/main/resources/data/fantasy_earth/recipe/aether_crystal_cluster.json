@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "CCC",
+    "CGC",
+    "CCC"
+  ],
+  "key": {
+    "C": "fantasy_earth:aether_crystal",
+    "G": "fantasy_earth:aether_glass"
+  },
+  "result": {
+    "id": "fantasy_earth:aether_crystal_cluster"
+  }
+}

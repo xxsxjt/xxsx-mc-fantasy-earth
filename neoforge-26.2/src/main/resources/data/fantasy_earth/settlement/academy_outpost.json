@@ -1,0 +1,11 @@
+{
+  "display_name": "settlement.fantasy_earth.academy_outpost",
+  "culture": "academy",
+  "generation_status": "enabled",
+  "weight": 4,
+  "min_distance_chunks": 44,
+  "biomes": ["#minecraft:is_overworld"],
+  "buildings": ["lecture_chamber", "field_laboratory", "ward_tower", "student_quarters"],
+  "residents": ["field_mage", "research_assistant", "ward_keeper", "visiting_scholar"],
+  "outputs": ["fantasy_earth:arcane_body_ward_notes", "fantasy_earth:arcane_breath_ward_notes", "fantasy_earth:aether_crystal"]
+}

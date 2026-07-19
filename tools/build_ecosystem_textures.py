@@ -8,7 +8,7 @@ from entity_uv import Atlas, color, human_face, line, muzzle, pack_back, point, 
 
 
 ROOT = Path(__file__).resolve().parents[1]
-ASSETS = ROOT / "neoforge-26.2" / "src" / "main" / "resources" / "assets" / "earth_online_magic"
+ASSETS = ROOT / "neoforge-26.2" / "src" / "main" / "resources" / "assets" / "fantasy_earth"
 ENTITY_DIR = ASSETS / "textures" / "entity"
 
 

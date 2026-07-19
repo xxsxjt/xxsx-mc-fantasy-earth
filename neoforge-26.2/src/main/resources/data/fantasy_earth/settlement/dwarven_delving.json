@@ -1,0 +1,11 @@
+{
+  "display_name": "settlement.fantasy_earth.dwarven_delving",
+  "culture": "dwarven",
+  "generation_status": "catalog_only",
+  "weight": 3,
+  "min_distance_chunks": 52,
+  "biomes": ["#minecraft:is_mountain"],
+  "buildings": ["stone_gate", "rune_foundry", "deep_storehouse", "survey_gallery"],
+  "residents": ["dwarven_surveyor", "rune_smith", "delving_guard", "ore_broker"],
+  "outputs": ["fantasy_earth:rune_copper_plate", "fantasy_earth:crystallized_mana_salt", "fantasy_earth:aether_glass"]
+}

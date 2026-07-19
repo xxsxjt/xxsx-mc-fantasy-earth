@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_forest",
+  "features": ["fantasy_earth:witch_hamlet"],
+  "step": "surface_structures"
+}

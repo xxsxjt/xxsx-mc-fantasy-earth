@@ -1,15 +1,15 @@
 modLoader="javafml"
 loaderVersion="[3,)"
-license="All Rights Reserved"
+license="AGPL-3.0-only"
 
 [[mods]]
-modId="earth_online_magic"
-version="0.7.0-alpha.9"
-displayName="Fantasy Earth on Minecraft / 魔幻地球 on Minecraft"
+modId="fantasy_earth"
+version="0.7.0-alpha.10"
+displayName="Fantasy Earth / 魔幻地球"
 logoFile="logo.png"
 description='''
 In-development beta for Minecraft 26.2 + NeoForge 26.2.0.7-beta.
-Fantasy Earth on Minecraft is an independently playable fantasy world mod:
+Fantasy Earth is an independently playable fantasy world mod:
 magic is treated as a learnable natural phenomenon layered on top of Minecraft's item ecology.
 This build implements the first playable magic loop: handbook screen, aether-aware
 alchemy/rune/ritual stations, JEI categories, consumable starter outputs,
@@ -36,28 +36,28 @@ outposts generate through isolated features and deferred anchors without modifyi
 '''
 authors="xxsx"
 
-[[dependencies.earth_online_magic]]
+[[dependencies.fantasy_earth]]
 modId="neoforge"
 type="required"
 versionRange="[26.2.0.7-beta,)"
 ordering="NONE"
 side="BOTH"
 
-[[dependencies.earth_online_magic]]
+[[dependencies.fantasy_earth]]
 modId="minecraft"
 type="required"
 versionRange="[26.2]"
 ordering="NONE"
 side="BOTH"
 
-[[dependencies.earth_online_magic]]
+[[dependencies.fantasy_earth]]
 modId="earth_on_minecraft"
 type="optional"
 versionRange="[0.1.0,)"
 ordering="AFTER"
 side="BOTH"
 
-[[dependencies.earth_online_magic]]
+[[dependencies.fantasy_earth]]
 modId="earth_human"
 type="optional"
 versionRange="[0.1.1,)"
